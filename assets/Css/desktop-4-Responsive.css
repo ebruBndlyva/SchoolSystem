@@ -1,0 +1,27 @@
+@media (max-width:376px) {
+    
+}
+@media (max-width:440px) {
+    
+}
+@media (max-width:576px) {
+    .students-list-text {
+        height: 120vh !important;
+    }
+}
+@media (max-width:768px) {
+    .students-list-text.text-add {
+        height: 90vh;
+    }
+}
+@media (max-width:992px) {
+    .students-list-text {
+        height: 70vh;
+    }
+}
+@media (max-width:1200px) {
+    
+}
+@media (max-width:1400px) {
+    
+}
