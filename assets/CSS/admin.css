@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7a7a7a57;
+}
+.admin-login {
+  width: 533px;
+  height: 581px;
+  background-color: white;
+}
+.title {
+  width: 533px;
+  height: 85px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admin-title {
+  text-align: center;
+  line-height: 39px;
+  font-family: "Mada", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 15px;
+  border-bottom: 1px solid #c6c4c4ad;
+}
+.inp {
+  width: 450px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.username img {
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.password img {
+  width: 29px;
+  height: 27px;
+}
+.username,
+.password p {
+  color: #b4b4b4;
+  font-size: 20px;
+  font-weight: 400;
+  width: 104px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 467px;
+  margin-bottom: 70px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.admin-info {
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 50px; */
+}
+.login-btn {
+  width: 467px;
+  height: 75px;
+  background-color: #ffb800;
+  margin-bottom: 80px;
+  color: white;
+  border: none;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 700;
+}
+.forget {
+  color: #b4b4b4;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -70px;
+  margin-right: -260px;
+  margin-bottom: 30px;
+}
