@@ -1,0 +1,61 @@
+@media (max-width:1000px){
+    .container {
+        display: flex;
+        position: relative;
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    
+    }
+    .right-side{
+        width: 100% !important;
+    }
+    .sideBar{
+        width: 100% !important;
+    }
+    .sideBar .side-foot {
+        display: flex;
+        gap: 20px;
+    
+    
+        .side-links {
+    
+            
+            ul {
+                
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                list-style-type: none;
+    
+                li {
+                    border-bottom:2px solid #ffb800 !important;
+                    
+                    a { 
+                        
+                        padding-left: 25px;
+                        text-decoration: none;
+                        color: black;
+                        font-family: "Lato", sans-serif;
+                        font-size: 20px !important;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        
+                    }
+    
+                    &:nth-child(2) {
+                        background-color: #ffb800;
+                        padding: 15px 0px;
+                    }
+                }
+    
+            }
+        }
+    }
+    .registered-students-list table{
+        width: 80%;
+        text-align: center;
+        height: 50vh;
+        border-collapse: collapse;}
+}
