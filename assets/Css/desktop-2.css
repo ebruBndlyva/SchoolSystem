@@ -7,6 +7,8 @@
 }
 .desktop-content {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sideBar {
@@ -65,7 +67,6 @@
   display: flex;
   flex-direction: column;
 
-
   .side-links {
     ul {
       display: flex;
@@ -92,8 +93,9 @@
 }
 
 .right-side {
-padding-top: 38px;
-padding-right: 38px;
+  padding-top: 38px;
+  padding-right: 50px;
+
   width: 75%;
   height: 100vh;
   display: flex;
@@ -107,7 +109,6 @@ padding-right: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
 }
 .search {
   width: 250px;
@@ -161,45 +162,142 @@ padding-right: 38px;
 .desktop-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
   gap: 30px;
 }
-.desktop-card{
-    background-color: red;
-    color: white;
-    .card-desc{
-        padding: 20px 0;
-        font-family: "Poppins", sans-serif;
-        h2{
-            font-size: 32px;
+.desktop-card {
+    height: 175px;
+  background-color: red;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  .card-desc {
+    padding: 20px;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .card-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 600;
+
+    .info-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      padding: 3px 10px;
+      border-radius: 5px;
+    }
+  }
+}
+.card-1 {
+  .card-desc {
+    background-color: #200c1f;
+  }
+  .card-foot {
+    background-color: #756974;
+  }
+}
+.card-2 {
+  .card-desc {
+    background-color: #93ff61;
+    color: black;
+  }
+  .card-foot {
+    background-color: #bafb9c;
+    .info-icon {
+      border-color: #42762b;
+    }
+  }
+}
+
+.card-3 {
+  .card-desc {
+    background-color: #73ffd5;
+    color: black;
+  }
+  .card-foot {
+    background-color: #a7fbe2;
+  }
+}
+
+.desktop-img{
+    margin: 50px 0;
+
+    img{
+        width: 100%;
+        height: 45vh;
+    }
+}
+
+@media (max-width:1000px){
+    .desktop-content {
+        display: flex;
+      
+        gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    
+    }
+    .right-side {
+        padding-top: 38px;
+        padding:0px 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: static;
+   
+      }
+    .sideBar{
+        position: static;
+        width: 100% !important;
+        z-index: 0;
+    }
+    .sideBar .side-foot {
+        display: flex;
+        gap: 20px;
+    
+    
+        .side-links {
+    
+            
+            ul {
+                
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                list-style-type: none;
+    
+                li {
+                    border-bottom:2px solid #ffb800 !important;
+                    
+                    a { 
+                        
+                        padding-left: 25px;
+                        text-decoration: none;
+                        color: black;
+                        font-family: "Lato", sans-serif;
+                        font-size: 20px !important;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        
+                    }
+    
+                    &:nth-child(2) {
+                        background-color: #ffb800;
+                        padding: 15px 0px;
+                    }
+                }
+    
+            }
         }
-    }
-}
-.card-1{
-    .card-desc{
-        background-color: #200C1F;
-    }
-    .card-foot{
-        background-color: #756974;
-    }
-   
-}
-.card-2{
-    .card-desc{
-        background-color: #93FF61;
-    }
-    .card-foot{
-        background-color: #BAFB9C;
-    }
-   
-}
-
-.card-3{
-    .card-desc{
-        background-color: #73FFd5;
-    }
-    .card-foot{
-        background-color: #a7FBe2;
-    }
-   
-}
-
+    }}
