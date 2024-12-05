@@ -37,6 +37,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 30px;
+  flex-wrap: wrap;
 }
 
 .search {
@@ -194,6 +195,7 @@
   display: flex;
   background-color: #dfdfdf;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 .all-students {
   display: flex;
